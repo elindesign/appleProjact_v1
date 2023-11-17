@@ -1,0 +1,13 @@
+<svg id="icon_menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="사각형_179" data-name="사각형 179" width="20" height="20" fill="none"/>
+  <g id="그룹_4203" data-name="그룹 4203" transform="translate(-2754.667 58)">
+    <g id="사각형_183" data-name="사각형 183" transform="translate(2760.849 -53) rotate(45)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-width="1">
+      <rect width="12" height="1.2" rx="0.6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="11" height="0.2" rx="0.1" fill="none"/>
+    </g>
+    <g id="사각형_184" data-name="사각형 184" transform="translate(2760 -44.515) rotate(-45)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-width="1">
+      <rect width="12" height="1.2" rx="0.6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="11" height="0.2" rx="0.1" fill="none"/>
+    </g>
+  </g>
+</svg>

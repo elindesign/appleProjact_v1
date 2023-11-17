@@ -1,0 +1,1829 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./common.css);
+
+
+html, body { height: 100%;}
+
+
+
+#bigWrapper {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  background-color: #fff;
+}
+
+
+/* 배너영역 */
+
+.bannerWrap {
+  position: relative;
+  width: 100%;
+  margin: -120px auto 0 ;
+  background-color: #0073e6; 
+   font-weight: 100;
+  transition: all 1s;}
+
+
+.bannerWrap .topBanner {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transition: all 2s;
+
+
+
+}
+
+.bannerWrap .topBanner p.swiper-slide {
+  padding: 16px 20px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.bannerWrap .topBanner p span {
+  color: #fff;
+  position: relative;
+  top: 0;
+}
+
+.bannerWrap .topBanner p span:hover {
+  text-decoration: underline;
+}
+
+.bannerWrap .topBanner p span::after {
+  content: '' url(../images/icons/svg/icon_btn_arrow-2.svg);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width:1024px) {
+  .bannerWrap .topBanner {
+ /*    width: 60%; */
+    margin: 44px auto 0;
+  }
+}
+
+
+
+
+/*  Main slide START 메인슬라이드 */
+#mainSlide {
+  width: 100%;
+}
+
+#ej-mainSwiper-wrap .swiper-wrapper {
+  height: 756px;
+}
+
+@media (max-width:830px){
+  #ej-mainSwiper-wrap .swiper-wrapper {
+    height: 600px;
+  }
+
+}
+
+
+#ej-mainSwiper-wrap .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#ej-mainSwiper-wrap .swiper-slide img {
+  /*  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; */
+}
+
+#ej-mainSwiper-wrap .swiper .buttonInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 1024px;
+}
+
+#ej-mainSwiper-wrap .swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #AFAFAF;
+  opacity: 0.5;
+}
+
+/* 블릿기호 색상변경 */
+#ej-mainSwiper-wrap .swiper-pagination.mainPG .swiper-pagination-bullet {
+  background-color: #AFAFAF;
+  margin-bottom: 2.5rem;
+}
+
+/* #ej-mainSwiper-wrap .swiper-pagination.mainPG .swiper-pagination-bullet .swiper-pagination-bullet-active {
+
+}
+ */
+/* 추가 */
+#ej-mainSwiper-wrap .swiper-slide a {
+  height: 756px;
+ 
+}
+
+#ej-mainSwiper-wrap .swiper-slide a .textBox {
+ /*  word-break: keep-all; */
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  transition: .5s ease;
+
+ 
+}
+
+#ej-mainSwiper-wrap .swiper-slide-active a .textBox{
+  opacity: 1;
+  top: 100px;
+  transition: .8s ease;
+}
+
+
+
+#ej-mainSwiper-wrap .swiper-slide a .textBox h2 {
+  font-size: var(--main-title-01-web-64);
+}
+
+#ej-mainSwiper-wrap .swiper-slide a .textBox p {
+  font-size: var(--main-title-02-web-32);
+}
+
+@media (max-width:830px){
+  #ej-mainSwiper-wrap .swiper-slide a .textBox h2 {
+    font-size: var(--section-title-01-m-40);
+  }
+  #ej-mainSwiper-wrap .swiper-slide a .textBox p {
+    font-size: var(--section-title-02-m-22);
+    margin-top: var(--title-margin);
+  }
+  
+
+
+}
+
+
+
+#ej-mainSwiper-wrap .swiper-slide:nth-of-type(1n) {
+  background-color: #000;
+  color: #fff;
+}
+
+#ej-mainSwiper-wrap .swiper-slide:nth-of-type(2n) {
+  background-color: #fff;
+  color: #000;
+}
+
+#ej-mainSwiper-wrap .swiper-slide.slide01 {
+  background-image: url(../images/main_ipad_01.png);
+  background-position: center bottom 20px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 830px) {
+  #ej-mainSwiper-wrap .swiper-slide.slide01 {
+    background-size: 80vh;
+    background-position: center bottom 2rem;
+  }
+}
+
+#ej-mainSwiper-wrap .swiper-slide.slide02 {
+  background-image: url(../images/main_iphone_02.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+@media (max-width: 830px) {
+  #ej-mainSwiper-wrap .swiper-slide.slide02 {
+    background-size: 100vh;
+    background-position: center bottom;
+  }
+}
+
+
+#ej-mainSwiper-wrap .swiper-slide.slide03 {
+  background-image: url(../images/main_mac_03.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+@media (max-width: 830px) {
+  #ej-mainSwiper-wrap .swiper-slide.slide03 {
+    background-size: 100vh;
+    background-position: center bottom 3rem
+  }
+}
+
+#ej-mainSwiper-wrap .swiper-slide.slide04 {
+  background-image: url(../images/main_watch_04.png);
+  background-position: center bottom;
+  background-color: #F5F5F7;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 830px) {
+  #ej-mainSwiper-wrap .swiper-slide.slide04 {
+    background-size: 100vh;
+    background-position: center bottom;
+  }
+}
+
+#ej-mainSwiper-wrap .swiper-slide.slide05 {
+  background-image: url(../images/main_AirPods_05-2.png), url(../images/main_AirPods_05.png);
+  background-position: center 70%, center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 830px) {
+  #ej-mainSwiper-wrap .swiper-slide.slide05 {
+    background-size: 60%, cover;
+    background-position: center 70%, center;
+  }
+}
+
+
+/* slide101에만 텍스트 그라디언트  */
+#ej-mainSwiper-wrap .swiper-slide.slide01 .textBox p {
+  background: linear-gradient(to right, var(--gradient-start-text-01)20%, var(--gradient-middle-text-02) 60%, var(--gradient-end-text-03)100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+
+
+
+
+
+/* main slide END  */
+
+
+
+
+/* ////////Apple store START */
+
+#appleStore-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#appleStore-section .swiper.AppStore {
+
+  height: 467px;
+  margin: auto;
+  max-width: 1024px;
+  overflow: hidden;
+  position: relative;
+}
+
+#appleStore-section .swiper.AppStore .swiper-wrapper {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+
+}
+@media (max-width:830px){
+  #appleStore-section .swiper.AppStore .swiper-wrapper {
+    justify-content: start;
+  }
+}
+
+
+#appleStore-section .swiper-slide {
+  cursor: pointer;
+  width: 135px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#appleStore-section .swiper-slide figure {
+  
+  width: 138px;
+  height: 185px;
+  padding: 16px 10px 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  
+}
+#appleStore-section .swiper-slide figure a {
+  height: 102px;
+  width: 102px;
+  display: block;
+  margin: 8px; 
+  position: relative;
+  
+}
+
+#appleStore-section .swiper-slide a img {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.1s linear;
+ /*  outline: 1px dotted red; */
+  
+}
+#appleStore-section .swiper-slide figure a:hover img {
+  transform: scale(0.9);
+}
+
+#appleStore-section .swiper-slide p {
+  /* margin-top: 1rem; */
+}
+@media (max-width:830px){
+  #appleStore-section .swiper-slide p {
+    font-size: 0.875rem;
+  }
+
+}
+/* /////////Apple store END */
+
+
+
+
+
+
+
+/*  iphone-section START */
+
+#iphone-section {
+  width: 100%; 
+  /* height: 850px;  */
+  position: relative; 
+   }
+
+#iphone-section .inner {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap;
+  align-items: center;
+ }
+  
+@media (max-width:830px){
+  #iphone-section .inner {
+    width: 100%;
+    flex-direction: column;
+    
+  }
+}
+
+
+
+#iphone-section .contents {
+      flex: 1;
+      position: relative;
+  }
+  @media (max-width:830px){
+    #iphone-section .contents {
+      position: static;
+    }
+      }
+      
+/* left비디오 */
+
+#iphone-section .contents.left-box {
+background-color: #000;
+width: 100%; height: 850px; 
+overflow: hidden;
+
+
+} 
+#iphone-section .contents.left-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 850px; 
+  background: linear-gradient(to top, black 100% , transparent );
+  transition: all .2s linear;
+  z-index: 5; 
+}
+
+@media (max-width:830px){
+  #iphone-section .contents.left-box::before {
+    background: none;
+  }
+  #iphone-section .contents.left-box:hover::before {
+    opacity: 1;
+  }
+    }
+
+#iphone-section .contents.left-box:hover::before {
+  opacity: 0;
+}
+#iphone-section .contents.left-box:hover video {
+  filter: blur(0);
+}
+
+#iphone-section .contents.left-box > video {  
+  position: absolute;  left: -110%; bottom: 0;
+  z-index: 1;
+  filter: blur(30px);
+  transition: all .2s linear;
+
+ } 
+
+ @media (max-width:830px){ 
+  #iphone-section .contents.left-box > video {
+    position: relative; 
+    filter: blur(0);
+  }
+  
+}
+
+ /* right비디오 */
+#iphone-section .contents.right-box {
+background-color: #fff;
+width: 100%; height: 850px; 
+overflow: hidden;
+} 
+
+@media (max-width:830px){
+  #iphone-section .contents.right-box  {
+    position: relative;
+    
+  }
+}
+
+#iphone-section .contents.right-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 850px; 
+  background: linear-gradient(to top, black 100% , transparent );
+  transition: all .2s linear;
+  z-index: 5;
+  
+}
+
+#iphone-section .contents.right-box:hover::before {
+  opacity: 0;
+}
+
+@media (max-width:830px){
+  #iphone-section .contents.right-box::before {
+    background: none;
+  }
+  #iphone-section .contents.right-box:hover::before {
+    opacity: 1;
+  }
+    }
+
+#iphone-section .contents.right-box > video{ 
+  position: absolute;  left: -80%; top: 0;
+  z-index: 1;
+}
+
+@media (max-width:830px){ 
+  #iphone-section .contents.right-box > video{ 
+    height: 750px;
+    position: relative; 
+    filter: blur(0);
+  }
+}
+
+@media (max-width:500px) {
+  #iphone-section .contents.right-box > video {
+       left: -200%;
+  }
+}
+
+#iphone-section .contents .contents-wrap{ 
+  position: absolute;
+  top: 0;
+  left: 0; right: 0; 
+  margin: 300px auto 0;
+  text-align: center;
+  z-index: 20;
+  }
+
+  @media (max-width:830px){ 
+    #iphone-section .contents.right-box > .contents-wrap{ 
+      margin: 150px auto 0; 
+    }
+  }
+
+#iphone-section .contents .contents-wrap figure {
+  width: 233px;
+  height: 200px;
+  margin: 0 auto;
+  display: flex; flex-direction: column;
+  justify-content: center;}
+  #iphone-section .contents .contents-wrap figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+    
+  }
+  #iphone-section .contents .contents-wrap figure img:hover{
+    transform: scale(1.1); /* 이미지를 확대합니다. */
+    transition: transform 0.3s; /* 변화 효과를 추가합니다. */
+    animation: moveLeftRight .8s ease-out infinite;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* 오른쪽으로 이동 */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  #iphone-section .contents .contents-wrap .text-group {text-align: center; font-size: 28px; color: #fff;}
+  #iphone-section .contents .contents-wrap .text-group p {padding: 8px 0;}
+  #iphone-section .contents .contents-wrap .text-group strong {font-size: 30px;}
+  #iphone-section .contents .contents-wrap .text-group strong span {font-size: 17px; font-weight: normal;}
+
+  @media (max-width:830px){ 
+    #iphone-section .contents .contents-wrap .text-group {font-size: 20px;}
+    #iphone-section .contents .contents-wrap .text-group p {padding: 16px 0 10px 0; }
+    #iphone-section .contents .contents-wrap .text-group strong {font-size: 24px; font-weight: normal;}
+    #iphone-section .contents .contents-wrap .text-group strong span {font-size: 14px; }
+  }
+
+  #iphone-section .contents .contents-wrap .color-group {
+    display: inline-block;
+    margin: 23px auto 0;
+    height: 46px;
+    padding: 16px 24px;
+    backdrop-filter: saturate(180%) blur(5px) opacity(0%) brightness(50%);  /* 배경 블러효과 */
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 40px;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+  }
+  
+  #iphone-section .contents .contents-wrap .color-group > span { 
+    display: inline-block;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: red; 
+    filter: blur(0);
+    z-index: 999;
+    margin: 0 4px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    box-sizing: border-box;
+    transition: .1s ease-in-out;
+  }
+  #iphone-section .contents .contents-wrap .color-group > span:hover {
+    transform: scale(1.2);
+    border: 1px solid rgba(255, 255, 255, .9);
+    filter: brightness(100%);
+  }
+
+   /* 왼쪽 컬러 */
+   #iphone-section .contents.left-box .color-group span:nth-child(1) {background-color: #8F8A81;}
+   #iphone-section .contents.left-box .color-group span:nth-child(2) {background-color: #1A202A;}
+   #iphone-section .contents.left-box .color-group span:nth-child(3) {background-color: #C9C8C3;}
+   #iphone-section .contents.left-box .color-group span:nth-child(4) {background-color: #1E1F20;}
+ 
+   /* 오른쪽 컬러 */
+   #iphone-section .contents.right-box .color-group span:nth-child(1) {background-color: #E3C8CA;}
+   #iphone-section .contents.right-box .color-group span:nth-child(2) {background-color: #E6E0C1;}
+   #iphone-section .contents.right-box .color-group span:nth-child(3) {background-color: #CAD4C5;}
+   #iphone-section .contents.right-box .color-group span:nth-child(4) {background-color: #CED5D9;}
+   #iphone-section .contents.right-box .color-group span:nth-child(5) {background-color: #1E1F20;}
+
+   
+  #iphone-section .contents .contents-wrap .link-group {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+    gap: 20px;}
+    #iphone-section .contents .contents-wrap .link-group a {}
+  #iphone-section .contents .contents-wrap .link-group a:nth-of-type(1) {
+    position: relative; 
+    display: inline-block;
+    padding-right: 20px; 
+  }
+  #iphone-section .contents .contents-wrap .link-group a:nth-of-type(1) img {
+    position: absolute; 
+    top: 0;  right: 0;  
+  }
+  #iphone-section .contents .contents-wrap .link-group a:nth-of-type(2) {}
+
+
+
+
+
+/*   Apple Watch START   */
+#yj-section {width: 100%; background-color: #fff;}
+#yj-section .inner {max-width:1024px; height: 850px;  margin: 0 auto; 
+  position: relative;
+} 
+#yj-section .titleBox {
+  position: absolute;
+  top: 70px; left: 0; right: 0; bottom: auto;
+  z-index: 21;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  text-align: center;
+  color: #000;
+}
+#yj-section .titleBox span {color: var(--new-color);}
+#yj-section .titleBox h2 {font-size: var(--section-title-01-web-48 );}
+#yj-section .titleBox p {font-size: var(--section-title-02-web-28);
+    margin-top: var(--title-margin );  color: var(--fontSub-color);}
+#yj-section .titleBox a em {font-style: normal; display: inline-block;
+   margin-top: 30px; padding: 0 20px; color: #000;}
+
+
+#yj-section .titleBox em:hover {text-decoration: underline; color: var(--fontAccent-dark-color);}
+
+@media (max-width:830px){
+  #yj-section .titleBox h2 {
+    font-size: var(--section-title-01-m-40);
+  }
+  #yj-section .titleBox p {
+    font-size: var(--section-title-02-m-22);
+  }
+  
+}
+
+
+/* 여진언니파트 */
+
+.yj-watch {
+  width: 100%; height: 100%;
+  background-color: #fff;
+}
+
+/* inner 영역 */
+.yj-watch-inner {
+  max-width:1024px; height: 100%; margin: 0 auto; 
+  position: relative;
+}
+
+
+/* text */
+.yj-watch-inner .text-wrapper {
+  margin: 70px 0 auto;
+  text-align: center;
+}
+.yj-watch-inner .text-wrapper h4 {
+  font-size: 48px; font-weight: 600;
+   line-height: 1.1;
+}
+.yj-watch-inner .text-wrapper>span {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+@media (max-width:830px) {
+  .yj-watch-inner .text-wrapper h4 {
+    font-size: var(--section-title-01-m-40);
+  }
+  .yj-watch-inner .text-wrapper>span{
+    font-size: var(--section-title-02-m-22);
+  }
+}
+
+
+.yj-watch-inner .text-wrapper>p {
+  margin-top: 10px;
+  font-size: 28px;
+  line-height: 1.2381;
+  letter-spacing: 0.016em;
+  text-align: center;
+}
+/* 이미지 전환 탭메뉴 */
+.yj-watch-inner .text-wrapper .watch-links {
+  margin: 40px auto 30px;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width:830px)  {
+  .yj-watch-inner .text-wrapper .watch-links  {
+    margin: 20px auto 10px;
+  }
+  .yj-watch-inner .text-wrapper p {
+      font-size: 22px;
+  }
+}
+
+.yj-watch-inner .text-wrapper .watch-links a {
+  margin-left: 50px;
+  color: #6E6E73;
+}
+
+
+.yj-watch-inner .text-wrapper .watch-links a:hover {
+  color: #0066CC; text-decoration: underline;
+}
+.yj-watch-inner .text-wrapper .watch-links a:first-child {
+  margin-left: 0;
+}
+
+@media (max-width:830px) {
+  
+.yj-watch-inner .text-wrapper .watch-links a  {
+    display: block; margin-left: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  
+}
+
+/* 이미지 */
+.yj-watch-inner .yj-image-wrapper {
+  position: relative;
+  max-width:1024px; 
+  margin: 0 auto;
+  height: 353px;
+ 
+  
+} 
+.yj-image-wrapper .swiper.yjSwiper {
+  position: absolute; top: 0; bottom: 0;
+  margin: auto;
+  padding: 0 40px;
+  width: 100%; 
+  height: 350px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.yj-image-wrapper .swiper .swiper-wrapper .yj-slide {
+  width: 305px;
+  height: 350px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.yj-watch-inner .yj-image-wrapper a.img{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.yj-watch-inner .yj-image-wrapper .ultra{
+  background: url(../images/watch/watch_side02.png);
+}
+.yj-watch-inner .yj-image-wrapper .main-watch{
+  background: url(../images/watch/main_watch.png);
+}
+.yj-watch-inner .yj-image-wrapper .nike {
+  background: url(../images/watch/watch_side03.png);
+}
+
+.yj-slide:not(.swiper-slide-active) {
+  filter: blur(5px) !important;
+  /* 클릭 및 호버 이벤트 비활성화 */
+  pointer-events: none; 
+  /* 필터 효과를 부드럽게 적용 */
+  transition: filter 0.3s ease-in-out,
+  backdrop-filter 0.3s ease-in-out; 
+
+}
+/* 활성화된 슬라이드는 효과를 제거 */
+.yj-slide.yj-slide-active {
+  filter: none;
+   /* 클릭 및 호버 이벤트 활성화 */
+  pointer-events: auto;
+  backdrop-filter: none;
+}
+
+/* 제품 정보 */
+.yj-watch-inner .information-wrapper {
+  height: 150px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.Awatch-color {
+  display: flex;
+  justify-content: center;
+}
+.Awatch-color span {
+  margin-left: 8px;
+  display: block;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+}
+.Awatch-color span:nth-child(1) {
+  background-color: #1A2530;
+}
+.Awatch-color span:nth-child(2) {
+  background-color: #DED6D1;
+}
+.Awatch-color span:nth-child(3) {
+  background-color: #E0E0E0;
+}
+.Awatch-color span:nth-child(4) {
+  background-color: #FADCDE;
+}
+.Awatch-color span:nth-child(5) {
+  background-color: #D61139;
+}
+.Awatch-color span:nth-child(6) {
+  background-color: #3E3A36;
+}
+.Awatch-color span:nth-child(7) {
+  background-color: #E6E6E7;
+}
+.Awatch-color span:nth-child(8) {
+  background-color: #D4BDA1;
+}
+
+.information-wrapper .info-box {
+ padding-bottom: 45px; 
+}
+
+.yj-watch .watch-info {
+  margin-top: 20px;
+  font-size:24px;
+  line-height: 1.8;
+}
+.yj-watch .func {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.yj-watch .Awatch-price {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: 8px;
+}
+@media (max-width:830px) {
+  .yj-watch .watch-info {
+    font-size: 20px;
+  }
+  .yj-watch .func  {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .yj-watch .Awatch-price {
+    font-size: 16px;
+  }
+}
+
+/* 화살표 색상 */
+.swiper-button-next.yj {
+  color: #A2A2A2;
+
+}
+
+@media (max-width:830px) {
+  .swiper-button-next.yj,
+  .swiper-button-prev.yj {display: none;}
+}
+
+
+/* ////// Apple Watch END */
+
+
+
+
+
+/*  en-iPadPro-section START  */
+#en-iPadPro-section {
+  width: 100%; 
+  height: 850px;
+  min-width: 320px;
+  background-color: #000;
+  position: relative;}
+
+ 
+#en-iPadPro-section .photo-group {
+position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+margin: auto;
+z-index: 11;
+display: flex; 
+justify-content: space-evenly;
+align-items: center;
+gap: 40%;
+/* background-color: yellow; */
+}
+
+#en-iPadPro-section .photo-group .bgImg {
+width: 100%;
+height: 850px;
+background-attachment: fixed;
+
+}
+#en-iPadPro-section .photo-group .left {
+background-size: 50%; 
+background-repeat: no-repeat; 
+background-image: url(../images/ipad/ipad_01.png);
+background-position: -40% center;
+
+}
+#en-iPadPro-section .photo-group .right {
+
+background-size: 50%; 
+background-repeat: no-repeat; 
+background-image: url(../images/ipad/ipad_02.png);
+background-position: 140% center;
+
+}
+
+@media (max-width:830px)  {
+  #en-iPadPro-section .photo-group .bgImg {
+    height: 850px;
+  }
+
+  #en-iPadPro-section .photo-group {
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  #en-iPadPro-section .photo-group .bgImg {
+    background-attachment: scroll;
+  }
+  #en-iPadPro-section .photo-group .left {
+    background-size: 300px;
+    background-position: -40% 450px;
+  }
+  #en-iPadPro-section .photo-group .right {
+    background-size: 300px;
+    background-position: 140% 450px;
+  }
+
+}
+@media (max-width:670px) {
+  
+  #en-iPadPro-section .photo-group  {
+    padding: 0 50px;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #en-iPadPro-section .photo-group .left {
+    background-size: 100%;
+    background-position: 0 bottom 20% ;
+  }
+  #en-iPadPro-section .photo-group .right {
+    display: none;
+  }
+} 
+
+#en-iPadPro-section .inner {
+  max-width: 1024px; 
+  margin: 0 auto;
+  height: 100%;  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+} 
+  
+#en-iPadPro-section .center-video {
+  position: absolute; 
+  bottom: -25%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+@media (max-width:830px) {
+  #en-iPadPro-section .center-video {
+    bottom: -25%;
+  }
+  #en-iPadPro-section .center-video video{
+    width: 100%;
+  }
+  
+}
+@media (max-width:630px) {
+  #en-iPadPro-section .center-video video{
+    display: none;
+  }
+}
+
+#en-iPadPro-section .titleBox .button-bigGroup {
+  margin-top: 27px;
+}
+
+#en-iPadPro-section .titleBox .button-bigGroup .more-box > a {position: relative;
+display: block;  margin-top: 16px; }
+#en-iPadPro-section .titleBox .button-bigGroup .more-box > a::after {
+  content: '' url(../images/icons/svg/icon_btn_arrow-2.svg);
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#en-iPadPro-section .titleBox .button-bigGroup .gradient-box  {
+  display: flex;
+  width: 100%; 
+  margin: 40px auto ;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  gap: 20px;
+  padding-right: 10px;
+
+}
+#en-iPadPro-section .titleBox .button-bigGroup .gradient-box .btn--gradation 
+.gradation_inner {background-color: #181a1b;
+}
+
+#en-iPadPro-section .titleBox .button-bigGroup .gradient-box .btn--gradation .gradation_inner i {
+  position: absolute; top: 35%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+}
+
+#en-iPadPro-section .titleBox .button-bigGroup .gradient-box 
+.btn--gradation:nth-of-type(1) .gradation_inner i{
+ font-size: 14px;
+ 
+}
+
+#en-iPadPro-section .titleBox .button-bigGroup .gradient-box 
+.btn--gradation:nth-of-type(2) .gradation_inner i {
+ font-size: 16px;
+}
+
+
+
+
+/* en-MacBook-section START */
+
+#en-macBook-section {
+  width: 100%; 
+  height: 100%;
+  background-color: #FBFBFB; 
+  position: relative;
+ /*  outline: 1px dotted red; */
+  clear: both;
+  overflow: hidden;
+}
+
+
+@media (max-width:1220px)  {
+  #en-macBook-section  { 
+    height: calc(100% + 30%);
+    background-color: #FBFBFB;
+    position: relative;
+      
+  }
+}
+
+
+@media (max-width:830px)  {
+  #en-macBook-section  { 
+    height: calc(100% + 40%);
+    background-color: #000;
+    position: relative;
+      
+  }
+}
+
+
+@media (max-width:841px) and (min-width:542px)  {
+  #en-macBook-section {
+    height: calc(100% + 70%);
+  }
+}
+
+@media (max-width:560px)  {
+  #en-macBook-section {
+    height: calc(100% + 180%);
+  }
+}
+
+
+
+#en-macBook-section .back-img {
+  height: 100%;
+  position: relative;
+  background-image: url(../images/mac/mac_pc.jpg);
+  background-position: center top 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@media (max-width:830px)   {
+  #en-macBook-section .back-img {
+  top: 50px;
+  height: 100%;
+  min-width: 320px;
+  position: relative;
+  background-image: url(../images/mac/mac_mobile.png) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-color: rgba(0,0,0,1);
+  }
+
+}
+#en-macBook-section .inner {
+  height: 100%;  
+/*   padding-top: 100px; */
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  
+ } 
+
+
+
+#en-macBook-section .titleBox p { margin-bottom: 27px;}
+
+@media (max-width:830px) {
+  #en-macBook-section .titleBox {color: #fff;}
+  #en-macBook-section .titleBox h2 {font-size: var(--section-title-01-m-40);}
+  #en-macBook-section .titleBox p {font-size: var(--section-title-02-m-22);}
+    }
+
+#en-macBook-section .titleBox .btn--more-bgDark:nth-of-type(1) {
+display: inline-block;
+position: relative;
+height: 100%;
+}
+
+#en-macBook-section .titleBox > .btn--more-bgDark:nth-of-type(1)::after {
+  content: '' url(../images/icons/svg/icon_btn_arrow.svg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-42%);
+ 
+}    
+#en-macBook-section .titleBox a {display: block; padding: 5px 0;}
+#en-macBook-section .titleBox a em {font-style: normal;}
+
+
+#en-macBook-section .bluer-box {
+  position: relative;
+  top: 250px;
+  max-width:1200px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  backdrop-filter:  blur(20px) brightness(130%) ; 
+  border-radius: 18px;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, .2);
+  margin-top: 100px;
+  }
+
+  @media (max-width:1280px) and (min-width:829px) {
+    #en-macBook-section .bluer-box {
+      max-width:calc(100% - 40px); 
+      margin: 0 40px;
+    }
+  }
+
+  @media (max-width:830px) {
+    #en-macBook-section .bluer-box {
+      max-width:calc(100% - 100px); 
+    }
+  }
+
+#en-macBook-section .bluer-box .item-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 100px;
+  height: 298px; }
+
+
+  @media (max-width:1220px) and (min-width:829px) {
+    #en-macBook-section .bluer-box .item-box {
+      flex: 1 1 200px;
+    }
+  }
+
+
+  @media (max-width:830px) and (min-width:320px) {
+    #en-macBook-section .bluer-box .item-box {
+      flex: 1 1 150px;
+    }
+  }
+
+#en-macBook-section .bluer-box .item-box .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px; 
+  border-radius: 18px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+  transition: all .2s ease;
+  
+}
+
+@media (max-width:830px) {
+  #en-macBook-section .bluer-box .item-box .img-box {
+    width: 120px;
+    height: 120px; 
+  }
+}
+
+
+
+#en-macBook-section .bluer-box .item-box .img-box:hover, 
+#en-macBook-section .bluer-box .item-box .img-box:focus {
+  box-shadow: 3px 10px 25px rgba(0 , 0, 0, .4);
+  cursor: pointer; 
+} 
+
+#en-macBook-section .bluer-box .item-box .img-box:hover img{
+  transform: scale(1.1);
+}
+
+#en-macBook-section .bluer-box .item-box .img-box img {
+  position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  object-fit: cover; 
+  transition: all .1s ease;
+}
+
+#en-macBook-section .bluer-box .item-box .text-box {width: 100%; text-align: center;
+color: #fff; text-shadow: 0 2px 5px rgba(0 , 0, 0, .4);  }
+#en-macBook-section .bluer-box .item-box .text-box h3 {font-size: 20px;
+  font-weight: 200;
+   margin-bottom: 8px;}
+#en-macBook-section .bluer-box .item-box .text-box p {font-size: 17px; font-weight: 100;}
+#en-macBook-section .bluer-box .item-box .text-box a {display: inline-block;}
+
+
+
+
+
+
+
+
+/*  en-airPops-section START  */
+
+
+#en-airPops-section {
+  /* width: 100%;
+  height: 100%; */
+  background-color: #F5F5F7; 
+}
+
+
+#en-airPops-section .swiper {
+  width: 100%;
+
+}
+
+#en-airPops-section .swiper.airPops-inner {
+  height: 850px;
+  max-width: 1024px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+ /*  outline: 1px dotted red; */
+  
+}
+
+#en-airPops-section .swiper.airPops-inner .swiper-wrapper {
+  margin-top: 275px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+@media (max-width:830px){
+  #en-airPops-section .swiper.airPops-inner .swiper-wrapper {
+    justify-content: start;
+  }
+}
+
+
+
+
+
+#en-airPops-section .swiper-slide:first-child{
+  margin-left: 32px;
+}
+#en-airPops-section .swiper-slide:last-child {
+  margin-right: 32px;
+}
+
+#en-airPops-section .swiper-slide {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 18px;
+  width: 280px;
+  height: 486px;
+  text-align: center;
+  font-size: 18px;
+  transition: box-shadow .2s linear;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+
+
+#en-airPops-section .swiper-slide:hover {
+  box-shadow: 20px 20px 16px rgba(0 , 0, 0, .1);
+  border: 1px solid #eee;
+  box-sizing: border-box;
+  
+}
+
+#en-airPops-section .contents-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#en-airPops-section .contents-box .img-box { 
+  width: 240px; 
+  height: 200px;
+  position: relative;
+ }
+#en-airPops-section .contents-box .img-box a {
+  display: inline-block;
+}
+#en-airPops-section .contents-box .img-box img {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0; margin: auto; width: 60%; }
+#en-airPops-section .contents-box .text-box {
+  width: 100%;
+  margin-top: 50px;
+
+ }
+ #en-airPops-section .contents-box .text-box h3 {
+  font-size: 38px; 
+  line-height: 1.2;
+}
+
+ #en-airPops-section .contents-box .text-box p {
+  font-weight: bold;
+  margin-top: 10px;  font-size: 20px; line-height: 1.5;}
+#en-airPops-section .contents-box .text-box p.hidden {opacity: 0;}
+ #en-airPops-section .contents-box .text-box span {font-size: 18px;}
+
+@media (max-width:830px) {
+  #en-airPops-section .contents-box .text-box h3 { font-size: 30px;}
+  #en-airPops-section .contents-box .text-box p {font-size: 20px;}
+  #en-airPops-section .contents-box .text-box span {font-size: 16px;}
+}
+
+
+ #en-airPops-section .contents-box .button-box {
+  width: 100%;  
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+ }
+ #en-airPops-section .contents-box .button-box a.btn--more-bgWhite {position: relative;}
+ #en-airPops-section .contents-box .button-box a.btn--more-bgWhite::after {
+    content: '' url(../images/icons/svg/icon_btn_arrow-2.svg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-42%);
+ }
+
+
+/* 블릿기호 색상변경 */
+#en-airPops-section .swiper-pagination.airPops .swiper-pagination-bullet {
+  width: 50px;
+  border-radius: 0;
+  height: 3px;
+  background-color: #AFAFAF;
+  margin-bottom: 2.5rem;
+}
+
+/* #en-airPops-section .swiper-pagination.airPops .swiper-pagination-bullet .swiper-pagination-bullet-active {
+
+}*/
+
+/* /////////Apple store END */
+
+
+
+
+
+
+/* en-AppleTv-section Start */
+
+
+#en-AppleTV-section {
+  min-width: 320px;
+  background-color: #fff;
+  position: relative; top: 0; left: 0;
+  clear: both;
+}
+
+#en-AppleTV-section .titleBox {
+  position: absolute;
+  top: 70px; left: 0; 
+  z-index: 21;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+  height: 144px;
+  margin-bottom: 50px;
+}
+#en-AppleTV-section .titleBox span {
+  width: 62px; margin: 0 auto;
+  display: inline-block;
+  
+}
+#en-AppleTV-section .titleBox span svg #path{transition: .2s ease;}
+#en-AppleTV-section .titleBox span svg #path:hover {fill: gray; }
+#en-AppleTV-section .titleBox span img { width: 62px; }
+#en-AppleTV-section .titleBox h2 {font-size: var(--section-title-01-web-48 );}
+#en-AppleTV-section .titleBox p {font-size: var(--section-title-02-web-28);
+    margin-top: var(--title-margin );  color: var(--fontSub-color);}
+#en-AppleTV-section .titleBox a em {font-style: normal; display: inline-block;
+   margin-top: 30px; padding: 0 20px;}
+
+
+
+@media (max-width:830px){
+  #en-AppleTV-section .titleBox h2 {
+    font-size: var(--section-title-01-m-40);
+  }
+  #en-AppleTV-section .titleBox p {
+    font-size: var(--section-title-02-m-22);
+  }
+  
+}
+
+ /* 디바이스배경 */
+ #en-AppleTV-section{ width: 100%;}
+#en-AppleTV-section .section-video {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 270px;
+  background-position: top;
+  margin-bottom: 200px;
+  }
+  
+
+  #en-AppleTV-section .section-video .device-wrapper {
+    position: relative; top: 0; left: 0;
+    background-image: url(../images/tv/tv_frame.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1216px;
+    min-width: 260px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+  }
+  
+  #en-AppleTV-section .section-video .device-wrapper .inner{
+    position: absolute;
+    top: 4px; left: 50%;
+    transform: translateX(-50%); 
+    width: 1016px;
+    height: 572px;
+    z-index: 1;
+    background-color: #fff;
+  }
+  
+
+  @media(max-width:1233px) {
+    #en-AppleTV-section .section-video .device-wrapper {
+      width: 780px;
+      max-height: 520px; 
+
+    }
+    #en-AppleTV-section .section-video .device-wrapper .inner{
+      top: 3px; 
+      width: 83.5%;
+      max-height: 366px; 
+      z-index: 1;
+    }
+  }
+
+
+  @media (max-width : 830px)   {
+   
+    #en-AppleTV-section .section-video .device-wrapper {
+      width: 580px;
+      height: 380px;
+      overflow: hidden;
+    }
+    #en-AppleTV-section .section-video .device-wrapper .inner{
+      top: 2px; 
+      height: 272px;
+      z-index: 1;
+    }
+
+  }
+  @media (max-width : 600px) {
+   
+    #en-AppleTV-section .section-video .device-wrapper {
+      width: 500px;
+      overflow: hidden;
+    }
+    #en-AppleTV-section .section-video .device-wrapper .inner{
+      top: 2px; 
+      height: 235px;
+      z-index: 1;
+    }
+
+  }
+
+  @media (max-width : 530px) {
+    #en-AppleTV-section .section-video .device-wrapper {
+      width: 420px;
+      height: 280px;
+     
+    }
+    #en-AppleTV-section .section-video .device-wrapper .inner{
+      top: 1px; 
+      height: 198px;
+    }
+  }
+
+  @media (max-width : 440px) {
+    #en-AppleTV-section .section-video .device-wrapper {
+      width: 320px;
+      height: 280px;
+     
+    }
+    #en-AppleTV-section .section-video .device-wrapper .inner{
+      top: 1px; 
+      height: 150px;
+    }
+  }
+
+  @media (max-width : 320px) {
+    #en-AppleTV-section .section-video .device-wrapper {
+      max-width: 260px;
+    }
+    #en-AppleTV-section .section-video .device-wrapper .inner{
+      height: 122px;
+     
+    
+    }
+  }
+
+  #en-AppleTV-section .swiper-slide {
+    background-color: #fff; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+ 
+  #en-AppleTV-section .swiper-slide:nth-of-type(2n) {
+  }
+ 
+
+  #en-AppleTV-section .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat; 
+  background-size: cover; background-position: center; }
+  
+  #en-AppleTV-section .swiper-slide:nth-of-type(1) {
+    background-image: url(../images/tv/689x387_01.svg);
+  position: relative; }
+  #en-AppleTV-section .swiper-slide:nth-of-type(1)::before{
+      content: ''; 
+      position: absolute; left: -45%;
+      background-color: #0066CC;
+      background-image: url(../images/tv/689x387_09.svg);
+      width: 40%;
+      height: 100%;
+      opacity: .5; 
+    }
+  #en-AppleTV-section .swiper-slide:nth-of-type(2) {
+    background-image: url(../images/tv/689x387_02.svg);
+}
+  #en-AppleTV-section .swiper-slide:nth-of-type(3) {
+    background-image: url(../images/tv/689x387_03.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(4) {
+    background-image: url(../images/tv/689x387_04.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(5) {
+    background-image: url(../images/tv/689x387_05.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(6) {
+    background-image: url(../images/tv/689x387_06.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(7) {
+    background-image: url(../images/tv/689x387_07.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(8) {
+    background-image: url(../images/tv/689x387_08.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(9) {
+    background-image: url(../images/tv/689x387_09.svg);
+  }
+  #en-AppleTV-section .swiper-slide:nth-of-type(9)::after{
+    content: ''; 
+    position: absolute; right: -45%;
+    background-color: #0066CC;
+    background-image: url(../images/tv/689x387_01.svg);
+    width: 40%;
+    height: 100%;
+    opacity: .5; 
+  }
+
+  #en-AppleTV-section .swiper-slide {opacity:0.3; transition:opacity 0.3s;}
+  #en-AppleTV-section .swiper-slide-active{opacity:1}
+
+
+  #en-AppleTV-section .swiper-button-next.yj:after,
+  .swiper-button-prev.yj:after {
+    color: #2c2c2c;
+    opacity: 0.5;
+  }
+
+  
+  /* 블릿기호 색상변경 */
+  #en-AppleTV-section .swiper-pagination.appleTvPage .swiper-pagination-bullet {
+    background-color: #2e2e2e;
+    margin-bottom: 1rem;
+    filter: brightness(150%);
+  }
+
+  @media (max-width:830px) {
+    #en-AppleTV-section .swiper-pagination.appleTvPage .swiper-pagination-bullet {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+
+  #en-AppleTV-section .bottom_group {
+    max-width: 1024px;
+    margin: 40px auto 0;
+    height: auto;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+  }
+
+  #en-AppleTV-section .contents-box {
+    flex: 1 1 320px;
+    align-self: flex-start;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width:1024px) {
+    #en-AppleTV-section .contents-box {
+    /*   flex: 1 1 200px; */
+      padding: 40px;
+      box-sizing: border-box;
+    }
+  }
+  @media (max-width:450px) {
+    #en-AppleTV-section .contents-box {
+    /*   flex: 1 1 200px; */
+      padding: 20px 70px;
+      box-sizing: border-box;
+    }
+  }
+
+
+  #en-AppleTV-section .contents-box .img-box { 
+    width: 100%;
+    margin: 0 auto;
+    height: 36px;
+    position: relative;
+   }
+  #en-AppleTV-section .contents-box .img-box a {
+    display: inline-block;
+  }
+  #en-AppleTV-section .contents-box .img-box img {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0; margin: auto; width: 188px; }
+  #en-AppleTV-section .contents-box .text-box {
+    top: 0;
+    width: 100%;
+    margin-top: 10px;
+  
+   }
+
+   @media (max-width:830px) {
+    #en-AppleTV-section .contents-box .img-box a img {
+      width: 150px;
+      margin: 0 auto;
+    }
+   }
+
+
+   #en-AppleTV-section .contents-box .text-box h3 {
+    font-size: 18px; 
+    line-height: 1.2;
+  }
+  
+   #en-AppleTV-section .contents-box .text-box p {
+    width: 100%;
+    margin-top: 40px;  font-size: 20px; line-height: 1.5;}
+
+    @media (max-width:830px) {
+      #en-AppleTV-section .contents-box .text-box p {
+        margin-top: 20px;
+      }
+     }
+
+  #en-AppleTV-section .contents-box .text-box p.hidden {opacity: 0;}
+   
+  
+  @media (max-width:830px) {
+    #en-AppleTV-section .contents-box .text-box p {font-size: 16px;}
+    
+  }
+  
+
+   #en-AppleTV-section .contents-box .button-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+   }
+   #en-AppleTV-section .contents-box .button-box a.btn--more-bgWhite {position: relative;}
+   #en-AppleTV-section .contents-box .button-box a.btn--more-bgWhite::after {
+      content: '' url(../images/icons/svg/icon_btn_arrow-2.svg);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-42%);
+   }
+  
+  
+  
+

@@ -1,0 +1,6 @@
+<svg id="icon_btn_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon_btn_arrow-2" data-name="icon_btn_arrow">
+    <path id="box" d="M20,0V20H0V0Z" fill="#2997ff" opacity="0"/>
+    <path id="arrow" d="M1.149,0,5.575,4.425,10,0l1.149,1.149L5.575,6.724,0,1.149Z" transform="translate(7 15.149) rotate(-90)" fill="#2997ff"/>
+  </g>
+</svg>

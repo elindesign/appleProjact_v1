@@ -1,0 +1,6 @@
+<svg id="click_arow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="click_arow-2" data-name="click_arow" transform="translate(0 20) rotate(-90)">
+    <rect id="Boundary" width="20" height="20" fill="none"/>
+    <path id="패스_1" data-name="패스 1" d="M0,0,5,5,0,10Z" transform="translate(15 7.5) rotate(90)" fill="#333336"/>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+<svg id="icon_downlod" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <rect id="download_Background_" data-name="download (Background)" width="16" height="16" fill="none"/>
+  <path id="download" d="M11,13.5H1a1,1,0,0,1-1-1v-2H1v2H11v-2h1v2A1,1,0,0,1,11,13.5ZM6,10.784a.5.5,0,0,1-.354-.146L1.03,6.021l.706-.707L5.5,9.077V0h1V9.077l3.764-3.764.707.707L6.354,10.638A.5.5,0,0,1,6,10.784Z" transform="translate(2 0.5)" fill="#333336"/>
+</svg>
