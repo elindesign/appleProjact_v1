@@ -483,9 +483,17 @@
   }
 }
 
+
 #dy-header .inner> #menu-content.mobile-menu-content.show-menu{
   display: none;
 }
+
+@media (min-width:831px) {
+  #dy-header .mobile-menu-content ul {
+    display: none;
+  }
+}
+
 
 
 
